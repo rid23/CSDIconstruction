@@ -37,6 +37,17 @@
 
 .features-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.feature-paper {
+  display: flex;
+  width: 25vw;
+  padding: 25px;
+  margin: 15PX;
+  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.5);
   
 }
 
