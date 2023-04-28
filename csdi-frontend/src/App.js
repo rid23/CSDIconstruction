@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import { Navbarsecond, Navbartop } from './navbar';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 function App() {
 
@@ -8,22 +8,51 @@ function App() {
     <div className="App">
       <Navbartop/>
       <Navbarsecond/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner/>
+      <Programs/>
     </div>
   );
+}
+
+
+function Banner() {
+
+  return (
+      <div className='image-banner'>
+        <img className='the-banner' src="/static/images/background.jpg"/>
+      </div>
+  )
+}
+
+function Programs() {
+  
+  return (
+    <>
+    <div className='program-container'>
+      <img className='the-program' src='/static/images/program1.jpg'/>
+      <img className='the-program' src='/static/images/program2.jpg' />
+    </div>
+    <div className='program-container'>
+      <a className='readmore-anchor'>Read more <ArrowRightAltIcon/></a>
+    </div>
+    </>
+  )
+}
+
+function whychooseus() {
+
+  return (
+    <>
+      <div className='features-container'>
+        <div className='feature-paper'>
+          
+        </div>
+        <div className='feature'>
+
+        </div>
+      </div>
+    </>
+  )
 }
 
 export default App;

@@ -4,9 +4,6 @@ import logo from  "./universitylogo.png"
 
 export const Navbartop = () => {
 
-
-
-
     return (
         <>
         <div className="university-logo-container">
