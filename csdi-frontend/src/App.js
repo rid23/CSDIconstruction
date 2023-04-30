@@ -4,23 +4,74 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import EmailIcon from '@mui/icons-material/Email';
+import { store } from "./store";
+import { useState } from 'react';
+import Course from './courses';
+
 function App() {
+  const [checkStore, setStore] = useState(store.getState())
+  store.subscribe(()=> setStore(store.getState()))
 
   return (
     <div className="App">
       <Navbartop/>
+
+      {[1].map(()=> {
+        if (checkStore.homePageState === 1){
+            return (<>
+            <Banner/>
+            <Programs/>
+            <Whychooseus/>
+            <div className='contacts-div-container'>
+              <Contact/>
+              <ContactUs />
+            </div>
+            <img className='whatsapp-icon' src="/static/images/whatsapp.png"/>
+            <img className="facebook-icon" src="/static/images/facebook.png"/>
+            <a href="tel:6294803604"><img className="call-icon" src="/static/images/call.png"/></a>
+            <img className='home-bg'  src = "/static/images/bg6.jpg" />
+            </>
+           )};
+        if (checkStore.cousePageState === 1) {
+          return (
+            <>
+            <Course/>
+            </>
+        )};
+        if (checkStore.galleryPageState === 1) {
+          return (
+            <>
+            <div style={{display : "flex", width:'100vw', height:'100vh', alignItems:'center', justifyContent:'center'}}>
+              <h1 > Here are some photos from our Gallery </h1>
+            </div>
+            </>
+        )};
+        if (checkStore.aboutPageState === 1) {
+          return (
+            <>
+            <div style={{display : "flex", width:'100vw', height:'100vh', alignItems:'center', justifyContent:'center'}}>
+              <h1> This is About Us Page</h1>
+            </div>
+            </>
+        )};
+        if (checkStore.contactPageState === 1) {
+          return (
+            <>
+            <div style={{display : "flex", width:'100vw', height:'100vh', alignItems:'center', justifyContent:'center'}}>
+              <h1> contact us Page</h1>
+            </div>
+            </>
+        )};
+        if (checkStore.facultyPageState === 1) {
+          return (
+            <>
+            <div style={{display : "flex", width:'100vw', height:'100vh', alignItems:'center', justifyContent:'center'}}>
+              <h1> Our Faculty Members</h1>
+            </div>
+            </>
+        )};
+      })}
       
-      <Banner/>
-      <Programs/>
-      <Whychooseus/>
-      <div className='contacts-div-container'>
-        <Contact/>
-        <ContactUs />
-      </div>
-      <img className='whatsapp-icon' src="/static/images/whatsapp.png"/>
-      <img className="facebook-icon" src="/static/images/facebook.png"/>
-      <a href="tel:6294803604"><img className="call-icon" src="/static/images/call.png"/></a>
-      <img className='home-bg'  src = "/static/images/bg6.jpg" />
     </div>
   );
 }
@@ -40,15 +91,16 @@ function Programs() {
   return (
     <>
     <div className='program-container'>
-      <div className="program-box" >
+      {[1,2,3].map(()=> (
+        <div className="program-box" >
           <div className='program-info'>
             <h1>Hi</h1>
             <p>Yo YO Goney Singher</p>
           </div>
-          <div className='program-img'>
           <img className='the-program' src='/static/images/program1.jpg'/>
-          </div>
-      </div>
+        </div>
+      ))}
+      
 
     </div>
     <div className='program-container'>

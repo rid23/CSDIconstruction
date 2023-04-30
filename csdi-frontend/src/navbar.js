@@ -1,6 +1,7 @@
 import React from "react"
 import "./navbar.css"
 import logo from  "./universitylogo.png"
+import { store } from "./store"
 
 export const Navbartop = () => {
 
@@ -21,12 +22,12 @@ export const Navbarsecond = () => {
 
     return (
         <div className="menu-container">
-            <a className="menu">Home</a>
-            <a className="menu">Courses</a>
-            <a className="menu">Gallery</a>
-            <a className="menu">Faculty</a>
-            <a className="menu">About</a>
-            <a className="menu">Contact</a>
+            <a onClick={()=> store.dispatch({type: 'setHome'})} className="menu">Home</a>
+            <a onClick={()=> store.dispatch({type: 'setCourse'})} className="menu">Courses</a>
+            <a onClick={()=> store.dispatch({type: 'setGallery'})} className="menu">Gallery</a>
+            <a onClick={()=> store.dispatch({type: 'setAbout'})} className="menu">About</a>
+            <a onClick={()=> store.dispatch({type: 'setContact'})} className="menu">Contact</a>
+            <a onClick={()=> store.dispatch({type: 'setFaculty'})} className="menu">Faculty</a>
             
             
            
