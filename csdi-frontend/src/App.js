@@ -20,6 +20,7 @@ function App() {
       <img className='whatsapp-icon' src="/static/images/whatsapp.png"/>
       <img className="facebook-icon" src="/static/images/facebook.png"/>
       <a href="tel:6294803604"><img className="call-icon" src="/static/images/call.png"/></a>
+      <img className='home-bg'  src = "/static/images/bg6.jpg" />
     </div>
   );
 }
@@ -39,8 +40,16 @@ function Programs() {
   return (
     <>
     <div className='program-container'>
-      <img className='the-program' src='/static/images/program1.jpg'/>
-      <img className='the-program' src='/static/images/program2.jpg' />
+      <div className="program-box" >
+          <div className='program-info'>
+            <h1>Hi</h1>
+            <p>Yo YO Goney Singher</p>
+          </div>
+          <div className='program-img'>
+          <img className='the-program' src='/static/images/program1.jpg'/>
+          </div>
+      </div>
+
     </div>
     <div className='program-container'>
       <a className='readmore-anchor'>Read more <ArrowRightAltIcon /></a>
