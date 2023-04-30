@@ -2,6 +2,8 @@ import './App.css';
 import { Navbarsecond, Navbartop } from './navbar';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import EmailIcon from '@mui/icons-material/Email';
 function App() {
 
   return (
@@ -17,6 +19,7 @@ function App() {
       </div>
       <img className='whatsapp-icon' src="/static/images/whatsapp.png"/>
       <img className="facebook-icon" src="/static/images/facebook.png"/>
+      <a href="tel:6294803604"><img className="call-icon" src="/static/images/call.png"/></a>
     </div>
   );
 }
@@ -132,11 +135,17 @@ const ContactUs = () => {
       <div className='contact-us'>
         <h1 className='contact-us-headline'> Contact Us</h1>
         <div className='contact-us-info' >
-          <LocationOnIcon style={{color:'white' , marginRight:'5px' , fontSize:'30px'}} />
-          <p className='contact-us-p'>Kolkata , saltlake city , lorem , ipsum , yoyo fsdbnfv jdwbujbubawcbnsj adbcnajbndjaskssssssssssssssssssss</p>
+          <LocationOnIcon style={{color:'white' , marginRight:'5px' , fontSize:'25px'}} />
+          <p className='contact-us-p'>398, Ramkrishnapur Road, Barasat, Near Jagadighata Market, Kolkata, West Bengal 700125</p>
         </div>
-        <div className='contact-us-info' ></div>
-        <div className='contact-us-info' ></div>
+        <div className='contact-us-info' >
+          <PhoneAndroidIcon style ={{color:'white' , marginRight:'5px' , fontSize:'25px'}} />
+          <p className='contact-us-p'>+91 9932909167</p> 
+        </div>
+        <div className='contact-us-info' >
+        <EmailIcon style ={{color:'white' , marginRight:'5px' , fontSize:'25px'}} />
+          <p className='contact-us-p'>csdi.help@protonmail.ch</p> 
+        </div>
       </div>
     </>
   )

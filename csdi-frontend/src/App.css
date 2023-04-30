@@ -79,6 +79,16 @@
   margin: 10px;
   z-index: 2;
 }
+
+.call-icon{
+  width: 30px;
+  object-fit: contain;
+  position: fixed;
+  bottom: 10vh;
+  right: 5px;
+  margin: 10px;
+  z-index: 2;
+}
 .whatsapp-icon {
   width: 30px;
   object-fit: contain;
@@ -166,8 +176,8 @@
 }
 
 .contact-us-p{
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 300;
   color: white;
   word-break: break-word;
 }
