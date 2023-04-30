@@ -22,6 +22,8 @@
 
 .program-container {
   display: flex;
+  flex-direction: column;
+  position: relative;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -30,10 +32,6 @@
   margin-bottom: 20px;
 }
 
-.the-program {
-  width: 40%;
-  object-fit: contain;
-}
 
 .readmore-anchor {
   display: flex;
@@ -224,37 +222,45 @@
   padding: 20px;
   position: relative;
   width:80vw;
+  height: 150px;
   display: flex;
   background-color: rgba(0,0,0,0.5);
   border-radius: 20px;
+  border-bottom: 4px solid yellow;
 }
 
 .program-info {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
   width:70%;
   height: 100%;
+  left: 0;
+  top: 0;
 }
-.program-info h1 ,p{
-color: white;
+.program-info h1{
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Ysabeau', sans-serif;
+}
 
+.program-info p{
+  font-family:  'Ysabeau', sans-serif;
+  color: rgb(192, 192, 192);
+  font-size: 15px;
+  font-weight: 500;
 }
-.program-img{
-  display: flex;
+
+.the-program{
+  position: absolute;
+  top: 0;
   right: 0;
   width: 30%;
   height: 100%;
-}
-.the-program{
- 
-  top: 0;
-  bottom: 0;
-  right: 0;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 20px;
 }
 @media screen and (max-width: 480px) {
   .program-container {
