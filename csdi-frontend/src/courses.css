@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Righteous&family=Ysabeau:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@500&family=Righteous&family=Ysabeau:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@500&family=Righteous&family=Secular+One&family=Ysabeau:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
 .course-container {
     display: flex;
     flex-direction: column;
@@ -17,12 +20,12 @@
     flex-direction: column;
     width: 80vw;
     padding: 20px;
-    border-bottom: 1.5px solid rgba(17, 14, 1, 0.712); 
+    border-bottom: 2px solid yellowgreen;
     border-radius: 15px;
     box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.2);
 }
 .course-h1 {
-    font-family: 'Secular One';
+    font-family: 'Kanit', sans-serif;
     font-size: 18px;
     font-weight: 500;
     margin: 2px;
@@ -30,7 +33,7 @@
 }
 .apply-button {
     position: absolute;
-    top: 20px;
+    bottom: 70px;
     right: 20px;
     border: none;
     padding: 8px 20px;
@@ -43,7 +46,7 @@
 
 .brochure-button {
     position: absolute;
-    top : 70px;
+    bottom : 27px;
     right: 20px;
     border: none;
     padding: 8px 20px;
@@ -60,11 +63,14 @@
     font-weight: 300;
 }
 .course-details2 {
+    font-family: "Josefin Sans";
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
 }
 .course-details-container{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     gap: 10px;
 }
 
@@ -72,4 +78,17 @@
      .Course {
         width: 85vw;
      }
+     .course-details2 {
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .apply-button {
+        font-size: 10px;
+    }
+    .brochure-button {
+        font-size: 10px;
+    }
 }

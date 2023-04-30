@@ -1,0 +1,92 @@
+
+
+*:focus {
+    outline: none;
+  }
+.inquiry-form {
+    position: relative;
+    padding-top: 60px;
+    height: 58vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ 
+
+}
+
+
+.inquiry-fields {
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+}
+
+.inquiry-close {
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    color: #333;
+}
+
+.inquiry-download-button{
+    border: none;
+    padding: 17px  10px;
+    background-image: linear-gradient(90deg,#a2df31,#44be73);
+    box-shadow: 10px 8px 12px 2px #a9b89f;
+    color: white;
+    font-weight: 600;
+    background-color: white;
+}
+
+.inquiry-terms {
+    font-weight: 600;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+}
+
+.inquiry-terms a{
+    text-decoration: none;
+    color: rgb(0, 181, 81);
+}
+
+.inquiry-input{
+    border: none;
+   
+    border-top: 1px solid yellowgreen;
+    border-bottom: 5px solid  yellowgreen;
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: #333;
+   
+}
+
+
+
+
+
+.inquiry-headline{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    word-break: break-word;
+    text-align: center;
+    color:#333;
+    
+}
+.inquiry-why {
+  
+    height: 50vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+
+}

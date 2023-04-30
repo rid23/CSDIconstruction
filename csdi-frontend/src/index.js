@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Course from './courses';
-
+import Inquiry from './inquiry';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -13,6 +13,8 @@ root.render(
       <Routes>
         <Route path='/' element={<App/>}></Route>
         <Route path='/course' element={<Course/>}></Route>
+        <Route path='/inquiry' element={<Inquiry/>}></Route>
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

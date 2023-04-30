@@ -54,11 +54,14 @@
 .feature-paper {
   display: flex;
   flex-direction: column;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
   width: 25vw;
   padding: 25px;
   margin: 15PX;
-  border-bottom: 5px solid rgb(141, 82, 5);
-  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.3);
+  border-bottom: 5px solid rgb(16, 154, 178);
+  border-top: 3px solid #d6c227;
+  box-shadow: 5px 2px 20px 5px rgba(0, 0, 0, 0.3);
   
 }
 
@@ -81,7 +84,7 @@
 }
 
 .call-icon{
-  width: 30px;
+  width: 33px;
   object-fit: contain;
   position: fixed;
   bottom: 10vh;
@@ -106,7 +109,7 @@
   flex-direction: column;
   width: 45vw;
   height: 400px;
-  background-color: rgb(150, 150, 0);
+  background-color: rgb(15, 106, 209);
   padding: 20px;
 }
 
@@ -130,8 +133,8 @@
   margin-top: 10px;
   padding: 7px  30px;
   background-color: white;
-  color: rgb(150, 150, 0);
-  font-weight: 500;
+  color: rgb(15, 106, 209);
+  font-weight: 700;
   font-size: 19px;
 }
 
@@ -163,7 +166,7 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px;
-  background-color: rgb(129, 129, 32);
+  background-color: rgb(52, 149, 201);
   height: 400px;
   width: 45vw;
 }

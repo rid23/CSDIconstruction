@@ -7,8 +7,11 @@ export const Navbartop = () => {
     return (
         <>
         <div className="university-logo-container">
-            <img className="uni-logo" src={logo}/>
-            <h1>CSDI</h1>
+            <div className='nav-logo'>
+                <img className="uni-logo" src={logo}/>
+                <h1>CSDI</h1>
+            </div>
+            <Navbarsecond />
         </div>
         </>
     )
@@ -20,10 +23,13 @@ export const Navbarsecond = () => {
         <div className="menu-container">
             <a className="menu">Home</a>
             <a className="menu">Courses</a>
-            <a className="menu">Gallary</a>
+            <a className="menu">Gallery</a>
             <a className="menu">Faculty</a>
-            <a className="menu">Eshtablished</a>
-            <a className="menu">Home</a>
+            <a className="menu">About</a>
+            <a className="menu">Contact</a>
+            
+            
+           
         </div>
     )
 }

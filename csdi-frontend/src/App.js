@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Navbartop/>
-      <Navbarsecond/>
+      
       <Banner/>
       <Programs/>
       <Whychooseus/>
@@ -29,7 +29,7 @@ function Banner() {
 
   return (
       <div className='image-banner'>
-        <img className='the-banner' src="/static/images/background.jpg"/>
+        <img className='the-banner' src="/static/images/background2.jpg"/>
       </div>
   )
 }
