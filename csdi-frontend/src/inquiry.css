@@ -5,22 +5,25 @@
 }
 
 .inquiry-main{
-    position: relative;
+    position: fixed;
     width: 100vw;
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .inquiry-form {
     position: relative;
     padding-top: 60px;
-    height: 58vh;
-    width: 100%;
+    height: 100%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
- 
-
+    background-color: white;
 }
 
 .inquiry-fields {
@@ -69,7 +72,6 @@
     border-radius: 10px;
     padding: 15px 20px;
     color: #333;
-   
 }
 
 .inquiry-headline{
@@ -83,11 +85,30 @@
 .inquiry-why {
     position: absolute;
     bottom: 0;
-    height: 15vh;
+    height: 20vh;
     width:100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: yellowgreen;
+    z-index: 0;
+}
+
+@media screen and (max-width : 900px) {
+    .inquiry-form {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .inquiry-form {
+        width: 100%;
+    }
+}
+
+@media screen and (min-height : 800px) {
+    .inquiry-why {
+        height: 30vh;
+    }
 }

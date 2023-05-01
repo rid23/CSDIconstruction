@@ -10,64 +10,79 @@ let default_store = {
     galleryPageState : 0,
     facultyPageState : 0,
     aboutPageState : 0,
-    contactPageState : 0
+    contactPageState : 0,
+    dnldBrochure: 0
 }
 
 
 
-function storemanager(store = {
+function storemanager(localStore = {
     homePageState : 1,
     cousePageState : 0,
     galleryPageState : 0,
     facultyPageState : 0,
     aboutPageState : 0,
-    contactPageState : 0
+    contactPageState : 0,
+    dnldBrochure : 0
     }, action) {
     switch (action.type) {
         case "setHome" :
-            return {homePageState : 1,
+            return {...localStore, 
+                homePageState : 1,
                 cousePageState : 0,
                 galleryPageState : 0,
                 facultyPageState : 0,
                 aboutPageState : 0,
                 contactPageState : 0}
         case "setCourse" :
-            return {homePageState : 0,
+            return { ...localStore,
+                homePageState : 0,
                 cousePageState : 1,
                 galleryPageState : 0,
                 facultyPageState : 0,
                 aboutPageState : 0,
                 contactPageState : 0}
         case "setGallery" :
-            return {homePageState : 0,
+            return { ...localStore,
+                homePageState : 0,
                 cousePageState : 0,
                 galleryPageState : 1,
                 facultyPageState : 0,
                 aboutPageState : 0,
                 contactPageState : 0}
         case "setFaculty" :
-            return {homePageState : 0,
+            return { ...localStore,
+                homePageState : 0,
                 cousePageState : 0,
                 galleryPageState : 0,
                 facultyPageState : 1,
                 aboutPageState : 0,
                 contactPageState : 0}
         case "setAbout":
-            return {homePageState : 0,
+            return { ...localStore,
+                homePageState : 0,
                 cousePageState : 0,
                 galleryPageState : 0,
                 facultyPageState : 0,
                 aboutPageState : 1,
                 contactPageState : 0}
         case "setContact" :
-            return {homePageState : 0,
+            return { ...localStore,
+                homePageState : 0,
                 cousePageState : 0,
                 galleryPageState : 0,
                 facultyPageState : 0,
                 aboutPageState : 0,
                 contactPageState : 1}
+        case "setPopupDnld":
+            return {...localStore,
+                dnldBrochure: 1}
+        case "closeDnldPopup":
+            return {...localStore,
+                dnldBrochure: 0}
         default :
-            return {homePageState : 1,
+            return { ...localStore,
+                homePageState : 1,
                 cousePageState : 0,
                 galleryPageState : 0,
                 facultyPageState : 0,

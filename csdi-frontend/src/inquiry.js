@@ -1,6 +1,7 @@
 import React from "react";
 import "./inquiry.css"
 import CloseIcon from '@mui/icons-material/Close';
+import { store } from "./store";
 
 
 const Inquiry = () => {
@@ -29,12 +30,14 @@ const Inquiry = () => {
                     </div>
 
                 </div>
-                <CloseIcon className='inquiry-close' />
+                <CloseIcon onClick={()=> store.dispatch({type: "closeDnldPopup"})} className='inquiry-close' />
+
+                <div className = 'inquiry-why' >
+
+                </div>
             </div>
 
-            <div className = 'inquiry-why' >
-
-            </div>
+            
         </div>
         </>
     )

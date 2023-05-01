@@ -1,5 +1,6 @@
 import React from "react";
 import "./courses.css"
+import { store } from "./store";
 
 function Course() {
 
@@ -24,7 +25,7 @@ function Course() {
                 </div>
                 
                 <button className="apply-button">Apply Now</button>
-                <button className='brochure-button'>Download Brochure</button>
+                <button onClick={()=> store.dispatch({type: "setPopupDnld"})} className='brochure-button'>Download Brochure</button>
             </div>
             )
             )}

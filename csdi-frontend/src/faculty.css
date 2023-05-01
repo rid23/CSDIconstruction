@@ -1,0 +1,38 @@
+.faculty-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 185px;
+}
+
+.faculty-container {
+    display: flex;
+    width: 70%;
+    height: 150px;
+    box-shadow: 1px 1px 20px 4px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom: 4px solid rgba(43, 173, 196, 0.911);
+    margin: 8px;
+}
+
+.faculty-img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.faculty-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.faculty-name{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px;
+}

@@ -7,6 +7,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import { store } from "./store";
 import { useState } from 'react';
 import Course from './courses';
+import Inquiry from './inquiry';
+import Faculty from './faculty';
 
 function App() {
   const [checkStore, setStore] = useState(store.getState())
@@ -15,6 +17,15 @@ function App() {
   return (
     <div className="App">
       <Navbartop/>
+
+      {[1].map(()=> {
+        if (checkStore.dnldBrochure===1){
+          return (
+          <Inquiry/>
+          )
+        }
+      })}
+
 
       {[1].map(()=> {
         if (checkStore.homePageState === 1){
@@ -64,11 +75,7 @@ function App() {
         )};
         if (checkStore.facultyPageState === 1) {
           return (
-            <>
-            <div style={{display : "flex", width:'100vw', height:'100vh', alignItems:'center', justifyContent:'center'}}>
-              <h1> Our Faculty Members</h1>
-            </div>
-            </>
+            <Faculty/>
         )};
       })}
       
