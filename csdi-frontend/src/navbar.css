@@ -65,9 +65,13 @@
     margin-right: 10px;
     cursor: pointer;
     padding: 5px;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+.menu:hover{
+    border: none;
 }
 
 @media screen and (max-width: 480px) {
