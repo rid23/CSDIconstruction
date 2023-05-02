@@ -7,6 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Course from './courses';
 import Inquiry from './inquiry';
 import Adminhome from './admin';
+import Adminlogin from './adminlogin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
         <Route path='/' element={<App/>}></Route>
         <Route path='/course' element={<Course/>}></Route>
         <Route path='/inquiry' element={<Inquiry/>}></Route>
+        <Route path='/admin/login' element={<Adminlogin/>}></Route>
         <Route path='/admin' element={<Adminhome/>}></Route>
 
       </Routes>

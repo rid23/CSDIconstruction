@@ -1,7 +1,7 @@
 import { legacy_createStore as createStore } from 'redux'
 
 export const store = createStore(storemanager)
-
+export const adminStore = createStore(adminStoreManager)
 
 
 let default_store = {
@@ -89,4 +89,20 @@ function storemanager(localStore = {
                 aboutPageState : 0,
                 contactPageState : 0}
     }
+}
+
+
+function adminStoreManager(store={
+    login : false
+    }, action) {
+    switch (action.type){
+        case "login":
+            return { ...store, login : true}
+        case "logout":
+            return { ...store, login : false}
+        default :
+            return store
+    }
+
+
 }
