@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Course from './courses';
 import Inquiry from './inquiry';
+import Adminhome from './admin';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -14,6 +16,7 @@ root.render(
         <Route path='/' element={<App/>}></Route>
         <Route path='/course' element={<Course/>}></Route>
         <Route path='/inquiry' element={<Inquiry/>}></Route>
+        <Route path='/admin' element={<Adminhome/>}></Route>
 
       </Routes>
     </BrowserRouter>
