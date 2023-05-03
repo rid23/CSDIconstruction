@@ -6,3 +6,6 @@ contact of faculty (HOD), qualification and photo
 placement records
 contact info (email, phone number)
 link of Social Media profiles of collage
+
+
+#this file is useless
