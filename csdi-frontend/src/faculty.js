@@ -11,9 +11,9 @@ function Faculty() {
                         <div className="faculty-container">
                             <img src="/static/images/faculty1.jpg" className="faculty-img"/>
                             <div className="faculty-details">
-                                <h1 className="faculty-name"> Name : Riddhi Bhattacharyya </h1>
-                                <h1 className="faculty-name"> Qualifications : BE in Civil Engineering, ME in Civil Engineering </h1>
-                                <h1 className="faculty-name"> experience : 10yr </h1>
+                                <h1 className="faculty-name"> Riddhi Bhattacharyya </h1>
+                                <h1 className="faculty-name"> BE in Civil Engineering, ME in Civil Engineering </h1>
+                                <h1 className="faculty-name"> 10yr+ Experience </h1>
                             </div>
                         </div>
                     )

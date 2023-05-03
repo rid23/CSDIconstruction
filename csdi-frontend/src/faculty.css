@@ -11,17 +11,17 @@
     width: 70%;
     height: 150px;
     box-shadow: 1px 1px 20px 4px rgba(0, 0, 0, 0.2);
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    border-bottom: 4px solid rgba(43, 173, 196, 0.911);
+
+    border-bottom: 2px solid rgba(43, 173, 196, 0.911);
     margin: 8px;
 }
 
 .faculty-img {
     height: 100%;
     object-fit: cover;
-    border-radius: 40px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .faculty-details {
@@ -29,10 +29,12 @@
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
+    justify-content: center;
 }
 
 .faculty-name{
+    font-family: 'Kanit', sans-serif;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     margin: 0px;
 }
