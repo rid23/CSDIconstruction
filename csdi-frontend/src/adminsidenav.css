@@ -1,11 +1,13 @@
 .adminSN-main {
     display: flex;
+    position: fixed;
     width: 250px;
     height: 100vh;
     top: 0px;
     left: 0px;
     flex-direction: column;
     background-color: rgba(0, 34, 61, 0.884);
+    z-index: 2;
 }
 
 .adminSN-top {
@@ -21,7 +23,7 @@
 .adminSN-h1 {
     margin: 0px;
     padding: 0px;
-
+    cursor: default;
 }
 
 .adminSN-middle {
@@ -42,6 +44,7 @@
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
+    cursor: pointer;
 }
 
 .adminSN-menu:hover {

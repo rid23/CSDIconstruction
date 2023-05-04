@@ -1,0 +1,11 @@
+.Admin-home {
+    height: 100vh;
+    width: 100vw;
+}
+.admin-playground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    overflow-y: auto;
+}

@@ -19,6 +19,15 @@
     border-radius: 20px;
     box-shadow:  1px 1px 20px 5px rgba(0, 0, 0, 0.5);
 }
+.admin-login-person-icon {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
 .admin-login-lebel {
     margin: 20px;
 }
